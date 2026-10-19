@@ -2,7 +2,6 @@ import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { SceneProvider, useScene } from './hooks/useScene';
 import { GoldenGlitter, StarField, NebulaGlow } from './components/CosmicEffects';
-import Navigation from './components/Navigation';
 import MusicButton from './components/MusicButton';
 import { Scene1Canvas, Scene1Overlay } from './scenes/Scene1';
 import { Scene2Canvas, Scene2Overlay } from './scenes/Scene2';
@@ -87,8 +86,7 @@ function MainExperience() {
       {/* 2D Interactive UI Layer */}
       <SceneUI />
 
-      {/* Navigation & Controls */}
-      <Navigation />
+      {/* Music Control */}
       <MusicButton />
 
       {/* Transition Fade */}
