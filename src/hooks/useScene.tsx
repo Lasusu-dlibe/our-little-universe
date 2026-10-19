@@ -19,8 +19,8 @@ export function SceneProvider({ children }: { children: ReactNode }) {
     setTransitioning(true);
     setTimeout(() => {
       setCurrentScene(scene);
-      setTimeout(() => setTransitioning(false), 500);
-    }, 800);
+      setTimeout(() => setTransitioning(false), 300);
+    }, 400);
   }, []);
 
   return (
